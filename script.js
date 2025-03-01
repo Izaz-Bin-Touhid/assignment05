@@ -3,6 +3,7 @@ const counter2 = document.getElementById('middle');
 const counter1 = document.getElementById('top');
 const sideBar = document.getElementById('side');
 const text = document.querySelectorAll('text');
+
 for( let i=0;i<button.length;i++){
     const comBtn = button[i];
     comBtn.addEventListener("click",function(event){
@@ -20,7 +21,7 @@ for( let i=0;i<button.length;i++){
 
         event.target.disabled = true;
 
-        // TIME
+        
 
         const now = new Date();
         const timeString = now.toLocaleTimeString();
@@ -33,9 +34,12 @@ for( let i=0;i<button.length;i++){
         timeElement.classList.add('time-tag');
         sideBar.appendChild(timeElement);
 
-    })
-}
+        
 
+    })
+    
+}
+alert()
 
 
 
