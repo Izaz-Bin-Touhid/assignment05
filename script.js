@@ -74,6 +74,16 @@ sideBtn.addEventListener("click", function () {
       element.remove();
     });
   });
+
+  const colors = ["#E0E0E0", "#B0BEC5", "#78909C", "#455A64", "#D7D7D7", "#A9A9A9","#607D8B"];
+  let currentIndex = 0;
+
+  function change (){
+    document.body.style.backgroundColor = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length;
+
+  }
+  document.getElementById("themeBtn").addEventListener("click", change);
   
 
 
