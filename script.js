@@ -66,14 +66,17 @@ for (let i = 0; i < button.length; i++) {
   });
 }
 
-
-
 sideBtn.addEventListener("click", function () {
-    const tagTimeElements = document.querySelectorAll(".time-tag");
-    tagTimeElements.forEach((element) => {
-      element.remove();
-    });
-  });
+  const tagTimeElements = document.querySelectorAll(".time-tag");
+  for (let i = 0; i < tagTimeElements.length; i++) {
+    tagTimeElements[i].remove();
+  }
+});
+
+
+
+
+
 
   const colors = ["#E0E0E0", "#B0BEC5", "#78909C", "#455A64", "#D7D7D7", "#A9A9A9","#607D8B"];
   let currentIndex = 0;
