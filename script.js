@@ -84,9 +84,15 @@ sideBtn.addEventListener("click", function () {
 
   }
   document.getElementById("themeBtn").addEventListener("click", change);
+
+  // date
+  const today = new Date();
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const dayName = days[today.getDay()];
+  const month = today.toLocaleString("en-US", { month: "short" });
+  const date = today.getDate().toString().padStart(2, "0");
+  const year = today.getFullYear();
+  document.getElementById("day").textContent = `${dayName},`;
+  document.getElementById("time").textContent = `${month} ${date} ${year}`;
   
-
-
-
-
 
